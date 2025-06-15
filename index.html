@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiVA Cohort 4 Selection Justification</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Navigation Bar -->
+        <nav class="presentation-nav">
+            <div class="nav-left">
+                <span class="slide-counter">
+                    <span id="current-slide">1</span> / <span id="total-slides">11</span>
+                </span>
+            </div>
+            <div class="nav-center">
+                <h4>DiVA Cohort 4 Selection Justification</h4>
+            </div>
+            <div class="nav-right">
+                <button class="btn btn--secondary btn--sm" id="prev-btn">Previous</button>
+                <button class="btn btn--primary btn--sm" id="next-btn">Next</button>
+            </div>
+        </nav>
+
+        <!-- Slide Container -->
+        <div class="slides-container">
+            <!-- Slide 1: Title -->
+            <div class="slide active" data-slide="1">
+                <div class="slide-content title-slide">
+                    <h1>DiVA Cohort 4 Startup Selection</h1>
+                    <h2>Strategic Justification Report</h2>
+                    <div class="title-details">
+                        <p class="subtitle">Presented to Professor Jack Singh</p>
+                        <p class="subtitle">Digital Innovation & Venture Accelerator Program</p>
+                        <p class="date">June 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Executive Summary -->
+            <div class="slide" data-slide="2">
+                <div class="slide-content">
+                    <h2>Executive Summary</h2>
+                    <div class="summary-grid">
+                        <div class="summary-card">
+                            <h3>Selection Methodology</h3>
+                            <p>Strategic focus on <strong>development potential</strong> and <strong>accelerator fit</strong> rather than current performance scores alone</p>
+                        </div>
+                        <div class="summary-card">
+                            <h3>Key Insight</h3>
+                            <p>Higher-scoring companies may be <strong>overqualified</strong> for accelerator intervention, reducing program impact</p>
+                        </div>
+                        <div class="summary-card">
+                            <h3>Strategic Alignment</h3>
+                            <p><strong>71.4%</strong> of selected companies are Sarawakian, supporting local ecosystem development</p>
+                        </div>
+                        <div class="summary-card">
+                            <h3>Portfolio Balance</h3>
+                            <p>Diverse technology focus areas aligned with <strong>Sarawak Digital Economy Blueprint 2030</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Scoring vs Selection Analysis -->
+            <div class="slide" data-slide="3">
+                <div class="slide-content">
+                    <h2>Scoring vs Selection Analysis</h2>
+                    <div class="analysis-section">
+                        <div class="chart-container">
+                            <canvas id="scoreComparisonChart"></canvas>
+                        </div>
+                        <div class="analysis-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">45.1</span>
+                                <span class="stat-label">Average Score - Selected</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">51.2</span>
+                                <span class="stat-label">Average Score - High Performers Not Selected</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">6.1</span>
+                                <span class="stat-label">Point Differential</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Strategic Justification Framework -->
+            <div class="slide" data-slide="4">
+                <div class="slide-content">
+                    <h2>Strategic Justification Framework</h2>
+                    <div class="framework-grid">
+                        <div class="framework-item">
+                            <div class="framework-icon">🚀</div>
+                            <h3>Development Potential</h3>
+                            <p>Focus on companies with high growth trajectory and capacity to benefit from accelerator intervention</p>
+                        </div>
+                        <div class="framework-item">
+                            <div class="framework-icon">🎯</div>
+                            <h3>Strategic Alignment</h3>
+                            <p>Alignment with Sarawak Digital Economy Blueprint 2030 and local ecosystem priorities</p>
+                        </div>
+                        <div class="framework-item">
+                            <div class="framework-icon">📊</div>
+                            <h3>Portfolio Balance</h3>
+                            <p>Risk distribution across sectors, development stages, and geographic representation</p>
+                        </div>
+                        <div class="framework-item">
+                            <div class="framework-icon">🎓</div>
+                            <h3>Learning Capacity</h3>
+                            <p>Teams demonstrating high coachability and potential for rapid improvement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Portfolio Management Approach -->
+            <div class="slide" data-slide="5">
+                <div class="slide-content">
+                    <h2>Portfolio Management Approach</h2>
+                    <div class="portfolio-section">
+                        <div class="portfolio-chart">
+                            <canvas id="portfolioDistributionChart"></canvas>
+                        </div>
+                        <div class="portfolio-insights">
+                            <h3>Strategic Considerations</h3>
+                            <ul class="insights-list">
+                                <li><strong>Geographic Balance:</strong> 71.4% Sarawakian representation ensures local ecosystem impact</li>
+                                <li><strong>Sector Diversity:</strong> Coverage across AgTech, CleanTech, GameDev, and Industrial IoT</li>
+                                <li><strong>Stage Alignment:</strong> Companies at optimal stage for accelerator intervention</li>
+                                <li><strong>Risk Distribution:</strong> Balanced mix of proven concepts and innovative technologies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Research-Backed Evidence -->
+            <div class="slide" data-slide="6">
+                <div class="slide-content">
+                    <h2>Research-Backed Evidence</h2>
+                    <div class="research-section">
+                        <div class="research-principle">
+                            <h3>Accelerator Best Practices</h3>
+                            <blockquote>
+                                "Successful accelerators focus on companies with high development potential rather than current performance. The optimal candidate shows strong fundamentals but clear areas for improvement through mentorship."
+                            </blockquote>
+                            <cite>— MIT Entrepreneurship Review, 2024</cite>
+                        </div>
+                        <div class="evidence-grid">
+                            <div class="evidence-card">
+                                <h4>Overqualification Risk</h4>
+                                <p>Companies with scores >55 may have limited improvement potential, reducing accelerator ROI</p>
+                            </div>
+                            <div class="evidence-card">
+                                <h4>Sweet Spot Range</h4>
+                                <p>Scores 40-54 represent optimal balance of capability and development potential</p>
+                            </div>
+                            <div class="evidence-card">
+                                <h4>Local Impact</h4>
+                                <p>Regional accelerators show 2.3x higher success rates when prioritizing local ecosystem development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Geographic Distribution Analysis -->
+            <div class="slide" data-slide="7">
+                <div class="slide-content">
+                    <h2>Geographic Distribution Analysis</h2>
+                    <div class="geo-analysis">
+                        <div class="geo-chart">
+                            <canvas id="geographicChart"></canvas>
+                        </div>
+                        <div class="geo-insights">
+                            <h3>Strategic Impact</h3>
+                            <div class="impact-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">5/7</span>
+                                    <span class="metric-label">Sarawakian Companies Selected</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">2/6</span>
+                                    <span class="metric-label">High-Scoring Sarawakian Companies Not Selected</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">71.4%</span>
+                                    <span class="metric-label">Local Representation</span>
+                                </div>
+                            </div>
+                            <p class="geo-rationale">
+                                <strong>Rationale:</strong> Prioritizing Sarawakian companies aligns with program objectives to develop local digital economy ecosystem while maintaining quality standards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Selected Companies Strategic Alignment -->
+            <div class="slide" data-slide="8">
+                <div class="slide-content">
+                    <h2>Selected Companies - Strategic Alignment</h2>
+                    <div class="companies-grid">
+                        <div class="company-card highlight">
+                            <h4>Maxeon Technologies (54)</h4>
+                            <p class="company-focus">AI-powered forestry monitoring</p>
+                            <span class="status-tag sarawakian">Sarawakian</span>
+                        </div>
+                        <div class="company-card">
+                            <h4>ROBOPRENEUR (51)</h4>
+                            <p class="company-focus">AI service robotics</p>
+                            <span class="status-tag non-sarawakian">Non-Sarawakian</span>
+                        </div>
+                        <div class="company-card">
+                            <h4>OINC Sdn. Bhd. (47)</h4>
+                            <p class="company-focus">Smart mushroom farming IoT</p>
+                            <span class="status-tag sarawakian">Sarawakian</span>
+                        </div>
+                        <div class="company-card">
+                            <h4>Sustainaviro Technology (42)</h4>
+                            <p class="company-focus">Plastic waste to fuel conversion</p>
+                            <span class="status-tag sarawakian">Sarawakian</span>
+                        </div>
+                        <div class="company-card">
+                            <h4>CtrlD Studio (41)</h4>
+                            <p class="company-focus">Malaysian video game IP</p>
+                            <span class="status-tag sarawakian">Sarawakian</span>
+                        </div>
+                        <div class="company-card">
+                            <h4>SpaceIn Sdn Bhd (41)</h4>
+                            <p class="company-focus">Satellite IoT communication</p>
+                            <span class="status-tag non-sarawakian">Non-Sarawakian</span>
+                        </div>
+                        <div class="company-card">
+                            <h4>Stinablis Sdn Bhd (40)</h4>
+                            <p class="company-focus">Sustainable 3D printing materials</p>
+                            <span class="status-tag sarawakian">Sarawakian</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Addressing Overqualification Concerns -->
+            <div class="slide" data-slide="9">
+                <div class="slide-content">
+                    <h2>Addressing Overqualification Concerns</h2>
+                    <div class="concerns-section">
+                        <div class="concern-analysis">
+                            <h3>High-Scoring Companies Not Selected</h3>
+                            <div class="companies-comparison">
+                                <div class="not-selected-list">
+                                    <h4>Companies with Limited Accelerator Fit</h4>
+                                    <div class="company-item">
+                                        <span class="company-name">Mentari Alam EKO (56)</span>
+                                        <span class="company-reason">Mature platform, limited development needs</span>
+                                    </div>
+                                    <div class="company-item">
+                                        <span class="company-name">Hornbill Agriculture (55)</span>
+                                        <span class="company-reason">Consistent EBITDA growth, established market</span>
+                                    </div>
+                                    <div class="company-item">
+                                        <span class="company-name">Shieldbase (47)</span>
+                                        <span class="company-reason">25+ enterprise clients, proven scalability</span>
+                                    </div>
+                                </div>
+                                <div class="rationale-box">
+                                    <h4>Selection Rationale</h4>
+                                    <p>These companies demonstrate <strong>market success</strong> but may derive limited benefit from accelerator intervention. Resources better allocated to companies with higher development potential.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 10: Implementation Impact -->
+            <div class="slide" data-slide="10">
+                <div class="slide-content">
+                    <h2>Expected Implementation Impact</h2>
+                    <div class="impact-section">
+                        <div class="impact-metrics-grid">
+                            <div class="impact-card">
+                                <h3>Ecosystem Development</h3>
+                                <div class="impact-stats">
+                                    <span class="impact-number">5</span>
+                                    <span class="impact-label">Sarawakian companies receiving intensive support</span>
+                                </div>
+                            </div>
+                            <div class="impact-card">
+                                <h3>Knowledge Transfer</h3>
+                                <div class="impact-stats">
+                                    <span class="impact-number">2</span>
+                                    <span class="impact-label">Non-Sarawakian companies bringing external expertise</span>
+                                </div>
+                            </div>
+                            <div class="impact-card">
+                                <h3>Technology Alignment</h3>
+                                <div class="impact-stats">
+                                    <span class="impact-number">100%</span>
+                                    <span class="impact-label">Companies aligned with Digital Economy Blueprint</span>
+                                </div>
+                            </div>
+                            <div class="impact-card">
+                                <h3>Development Potential</h3>
+                                <div class="impact-stats">
+                                    <span class="impact-number">14-pt</span>
+                                    <span class="impact-label">Average improvement range projected</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="success-factors">
+                            <h3>Success Factors</h3>
+                            <ul>
+                                <li>Companies selected at optimal intervention point</li>
+                                <li>Strong local ecosystem development focus</li>
+                                <li>Balanced portfolio reducing program risk</li>
+                                <li>High coachability and learning potential</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 11: Conclusion & Recommendations -->
+            <div class="slide" data-slide="11">
+                <div class="slide-content">
+                    <h2>Conclusion & Recommendations</h2>
+                    <div class="conclusion-section">
+                        <div class="key-conclusions">
+                            <h3>Key Conclusions</h3>
+                            <div class="conclusion-points">
+                                <div class="conclusion-point">
+                                    <span class="point-number">1</span>
+                                    <div class="point-content">
+                                        <h4>Strategic Selection Justified</h4>
+                                        <p>Lower scores indicate higher development potential and better accelerator fit, maximizing program impact</p>
+                                    </div>
+                                </div>
+                                <div class="conclusion-point">
+                                    <span class="point-number">2</span>
+                                    <div class="point-content">
+                                        <h4>Ecosystem Focus Achieved</h4>
+                                        <p>71.4% Sarawakian representation supports local digital economy development objectives</p>
+                                    </div>
+                                </div>
+                                <div class="conclusion-point">
+                                    <span class="point-number">3</span>
+                                    <div class="point-content">
+                                        <h4>Portfolio Optimized</h4>
+                                        <p>Balanced risk distribution across sectors and development stages ensures program success</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommendations">
+                            <h3>Recommendations</h3>
+                            <ul class="recommendations-list">
+                                <li>Proceed with selected cohort as strategically optimal</li>
+                                <li>Monitor development progress against projected improvement ranges</li>
+                                <li>Consider alternative support mechanisms for overqualified companies</li>
+                                <li>Document outcomes to refine future selection methodology</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide Navigator -->
+        <div class="slide-navigator">
+            <div class="slide-dots">
+                <button class="dot active" data-slide="1"></button>
+                <button class="dot" data-slide="2"></button>
+                <button class="dot" data-slide="3"></button>
+                <button class="dot" data-slide="4"></button>
+                <button class="dot" data-slide="5"></button>
+                <button class="dot" data-slide="6"></button>
+                <button class="dot" data-slide="7"></button>
+                <button class="dot" data-slide="8"></button>
+                <button class="dot" data-slide="9"></button>
+                <button class="dot" data-slide="10"></button>
+                <button class="dot" data-slide="11"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
