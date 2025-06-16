@@ -21,9 +21,9 @@ const applicationData = {
     {"name": "Mentari Alam EKO", "score": 56, "reason": "Established digital infrastructure"},
     {"name": "Hornbill Agriculture", "score": 55, "reason": "Consistent EBITDA growth"},
     {"name": "Midwest Composites", "score": 51, "reason": "Serving major sectors"},
-    {"name": "Shieldbase", "score": 47, "reason": "25+ enterprise customers"},
-    {"name": "Company E", "score": 49, "reason": "Market established"},
-    {"name": "Company F", "score": 48, "reason": "Revenue stable"}
+    {"name": "Vespid", "score": 49, "reason": "Potential for SaaS Accelerator"},
+    {"name": "Mindnrobotics", "score": 48, "reason": "No establishment in Sarawak"},
+    {"name": "Shieldbase", "score": 47, "reason": "Potential for SaaS Accelerator"}
   ],
   "scatter_plot_data": [
     {"x": 1, "y": 54, "type": "selected", "name": "Maxeon"},
@@ -36,8 +36,8 @@ const applicationData = {
     {"x": 8, "y": 56, "type": "not_selected", "name": "Mentari Alam EKO"},
     {"x": 9, "y": 55, "type": "not_selected", "name": "Hornbill Agriculture"},
     {"x": 10, "y": 51, "type": "not_selected", "name": "Midwest Composites"},
-    {"x": 11, "y": 49, "type": "not_selected", "name": "Company E"},
-    {"x": 12, "y": 48, "type": "not_selected", "name": "Company F"},
+    {"x": 11, "y": 49, "type": "not_selected", "name": "Vespid"},
+    {"x": 12, "y": 48, "type": "not_selected", "name": "Mindnrobotics"},
     {"x": 13, "y": 47, "type": "not_selected", "name": "Shieldbase"}
   ]
 };
